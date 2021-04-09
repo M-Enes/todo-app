@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border-bottom: 1px ridge #d3d3d3;
+    padding: 2%;
+}
+
+.paddingContainer {
+    padding: 1.5%;
+    /* background-color: rgb(0, 86, 179); */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.deactive-todo {
+    color: rgb(224, 216, 216);
+}
+
+.header h1 {
+    margin: 3%;
+}
+
+button {
+    align-self: center;
+}
+
+a {
+    font-size: large;
+    color: rgb(49, 61, 73);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(177, 194, 212);
+}
+
+button#unshow-finished-todos {
+    float: right;
+}
+
+input#todo-input {
+    border-radius: 5px;
+    /* border: none; */
+    outline: 0;
+    padding: 4px 7px;
+    border: 2.5px solid #739ddd;
+    /* box-shadow: 0 0 5pt 0.5pt #d3d3d3; */
+}
+
+@media screen and (max-width: 767px) {
+    button#delete-finished-todos {
+        margin-top: 4%;
+        width: 100%;
+    }
+    input#todo-input {
+        width: 100%;
+    }
+    li {
+        margin: 5%;
+    }
+    .header h1 {
+        font-size: xx-large;
+        font-weight: normal;
+    }
+    @media screen and (max-height: 1200px) {
+        button {
+            width: 100%;
+            margin-top: 1%;
+        }
+    }
+}
